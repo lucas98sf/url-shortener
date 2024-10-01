@@ -76,6 +76,18 @@ The server will be running at `http://localhost:3000`. The `dev` script uses `ts
 - `PUT /:shortCode` - Update an existing short URL (authenticated)
 - `DELETE /:shortCode` - Delete a short URL (authenticated)
 
+## Running the tests
+
+```
+npm run test
+```
+
+or
+
+```
+npm run test:coverage
+```
+
 ## Building for Production
 
 To build the project for production:
