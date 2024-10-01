@@ -2,6 +2,8 @@
 
 This project is a URL shortener API built with Node.js, TypeScript, Express, and Drizzle ORM.
 
+![image](https://github.com/user-attachments/assets/19712e62-98a0-4f33-b2b0-1a82a5f7d6a4)
+
 ## Prerequisites
 
 - Node.js (v14 or later)
