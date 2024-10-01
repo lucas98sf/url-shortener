@@ -14,12 +14,12 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(
-  pinoHttp({
-    logger,
-    autoLogging: {
-      ignore: (req) => req.url.includes("/api-docs"),
-    },
-  })
+	pinoHttp({
+		logger,
+		autoLogging: {
+			ignore: (req) => req.url.includes("/api-docs"),
+		},
+	}),
 );
 app.use(cors());
 app.use(express.json());
@@ -30,8 +30,8 @@ app.use("/auth", authRoutes);
 app.use(urlRoutes);
 
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-  console.log(
-    `API Documentation available at http://localhost:${port}/api-docs`
-  );
+	console.log(`Server is running on http://localhost:${port}`);
+	console.log(
+		`API Documentation available at http://localhost:${port}/api-docs`,
+	);
 });

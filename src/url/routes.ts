@@ -33,10 +33,10 @@ const router = express.Router();
  *         description: Invalid URL
  */
 router.post(
-  "/urls/shorten",
-  validateUrl,
-  getUserMiddleware,
-  urlController.shorten
+	"/urls/shorten",
+	validateUrl,
+	getUserMiddleware,
+	urlController.shorten,
 );
 
 /**
